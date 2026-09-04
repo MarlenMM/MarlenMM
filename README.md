@@ -1,7 +1,8 @@
 ## Marlen Melis
 
 **B.S. Artificial Intelligence Computing + Business & Technology Management — KAIST**, Daejeon, South Korea (2026–2030)
-Nazarbayev Intellectual School of Physics & Mathematics, Almaty · HIT Global Summer School, Harbin
+Nazarbayev Intellectual School of Physics & Mathematics, Almaty
+HIT Global Summer School, Harbin
 
 
 ---
