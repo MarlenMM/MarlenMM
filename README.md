@@ -3,7 +3,6 @@
 **B.S. Artificial Intelligence Computing + Business & Technology Management — KAIST**, Daejeon, South Korea (2026–2030)
 Nazarbayev Intellectual School of Physics & Mathematics, Almaty · HIT Global Summer School, Harbin
 
-I build quantitative and machine-learning systems. The part I care most about is the part most projects skip: making a system report what it actually knows. Confidence intervals instead of point estimates, a naive baseline every model has to beat before it ships, and publishing the result that didn't go my way.
 
 ---
 
@@ -21,13 +20,6 @@ I build quantitative and machine-learning systems. The part I care most about is
 - **code-review-ai** — the best LLM configuration **matched rather than beat** the trained Random Forest: 93.75% accuracy, 0.816 macro-F1, an identical confusion matrix. That was the opposite of my hypothesis, so it became the headline finding.
 - **modulemate** — **zero fabricated citations** and a 1.000 refusal rate on the out-of-scope set across a 63-question gold set, with the false-refusal rate (0.038) published beside it, because a refusal rate on its own can be maximised by refusing everything.
 
-### Things that went wrong, on the record
-
-Each of these is written up in the repository rather than quietly fixed:
-
-- A feature ablation in **code-review-ai** traced a suspiciously strong 98%+ ROC-AUC to leaky review-process features. Removing them made the model worse and correct in the same change — 76.8% accuracy is the honest number.
-- **quantpulse**'s backtest is built to be survivorship-bias-free, but free data sources carry price history for 98.8% of current S&P 500 members and only 49% of delisted ones. The track record is therefore flattered by an unknown amount. That is stated in the README, not engineered around.
-- **modulemate**'s own scorecard marks its sustained-burst latency target **FAIL** at 10.8 s median. The cause is identified — hosted-API throttling, with under 30 ms of it attributable to retrieval — instead of the target being moved.
 
 ### Research
 
