@@ -15,7 +15,7 @@ Nazarbayev Intellectual School of Physics & Mathematics, Almaty · HIT Global Su
 | **[modulemate](https://github.com/MarlenMM/modulemate)** | Retrieval-grounded course assistant that answers only from staff-issued material and cites the slide it came from. Hybrid dense + BM25 retrieval, cross-encoder re-ranking, and three independent refusal layers. | Python · FAISS · sentence-transformers · Streamlit |
 | **[theme-worlds](https://github.com/MarlenMM/theme-worlds)** · [live viewer](https://marlenmm.github.io/theme-worlds/) | Seamless 360° panoramas from stock Stable Diffusion v1.5. A MultiDiffusion sampler written from scratch, with circular windows so the wrap-around loop is a property of the sampling rather than a post-process, and multi-branch conditioning so two themes share one world without CLIP's 77-token limit truncating either prompt. No training, zero source images. | Python · PyTorch · diffusers · CLIP |
 
-### The numbers I would defend in an interview
+### Some numbers
 
 - **quantpulse** — Sharpe and CAGR are reported as moving-block bootstrap confidence intervals, never as a bare point estimate. Every forecast (ARIMA/SARIMA, gradient boosting, Monte Carlo) is graded out-of-sample against a random-walk baseline before it is allowed to ship.
 - **code-review-ai** — the best LLM configuration **matched rather than beat** the trained Random Forest: 93.75% accuracy, 0.816 macro-F1, an identical confusion matrix. That was the opposite of my hypothesis, so it became the headline finding.
@@ -38,4 +38,5 @@ Sole author, peer-reviewed — *"How Did Personal Loans Influence the Well-Being
 
 ### Contact
 
+marlen.melis.06@gmail.com
 marlen.melis@kaist.ac.kr
