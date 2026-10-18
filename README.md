@@ -31,14 +31,14 @@ Sole author, peer-reviewed — *"How Did Personal Loans Influence the Well-Being
 
 ### Toolkit
 
-**Languages** — Python, TypeScript, SQL, C
-**ML and data** — PyTorch, diffusers (Stable Diffusion), scikit-learn, statsmodels, pandas, NumPy, FAISS, sentence-transformers
-**Systems** — FastAPI, SQLAlchemy, Alembic, React, Streamlit, SQLite
-**Engineering** — pytest, Hypothesis (property-based testing), GitHub Actions CI, ruff, mypy, pre-commit
-**Quantitative** — portfolio optimisation (MPT, HRP, Black-Litterman), backtesting, bootstrap confidence intervals, Monte Carlo, ARIMA/SARIMA
+**Languages** — Python, TypeScript, SQL, C\
+**ML and data** — PyTorch, diffusers (Stable Diffusion), scikit-learn, statsmodels, pandas, NumPy, FAISS, sentence-transformers\
+**Systems** — FastAPI, SQLAlchemy, Alembic, React, Streamlit, SQLite\
+**Engineering** — pytest, Hypothesis (property-based testing), GitHub Actions CI, ruff, mypy, pre-commit\
+**Quantitative** — portfolio optimisation (MPT, HRP, Black-Litterman), backtesting, bootstrap confidence intervals, Monte Carlo, ARIMA/SARIMA\
 **Spoken** — English (IELTS 8.0), Russian (native), Kazakh (native)
 
 ### Contact
 
-marlen.melis.06@gmail.com
+marlen.melis.06@gmail.com\
 marlen.melis@kaist.ac.kr
