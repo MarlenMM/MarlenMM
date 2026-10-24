@@ -1,44 +1,73 @@
-## Marlen Melis
+## Hi, I'm Marlen Melis
 
-**B.S. Artificial Intelligence Computing + Business & Technology Management — KAIST**, Daejeon, South Korea (2026–2030)\
-Nazarbayev Intellectual School of Physics & Mathematics, Almaty · HIT Global Summer School, Harbin
+I study **AI Computing at KAIST** (B.S. 2026–2030, with an intended double major in Business & Technology
+Management) and do undergraduate research in the **[Interactive Computing Lab](https://ic.kaist.ac.kr)** with
+Prof. Uichin Lee. I build machine-learning systems end to end, from data collection to a working product, and I
+care most about the evaluation: pre-registered comparisons, leakage checks, baselines and confidence intervals,
+with the limits stated next to the numbers.
 
+**Now:** researching how scholarly platforms control access for AI agents (separate `robots.txt` rules for training
+crawlers, search crawlers and user-triggered fetchers) and what that means for AI-assisted literature search.
+
+[LinkedIn](https://www.linkedin.com/in/marlenmelis) · [marlen.melis@kaist.ac.kr](mailto:marlen.melis@kaist.ac.kr) · Daejeon, South Korea
 
 ---
 
-### Projects
+### Selected projects
 
-| Project | What it is | Stack |
-|---|---|---|
-| **[quantpulse](https://github.com/MarlenMM/quantpulse)** · [live demo](https://marlenmm.github.io/quantpulse/) | Equity research and portfolio-construction engine. Eight free data sources into a 23-table schema, seven-category composite scoring, walk-forward backtesting, and three portfolio optimisers (mean-variance, Hierarchical Risk Parity, Black-Litterman). ~17k lines of engine code, 1,466 automated tests including property-based. | Python · scikit-learn · statsmodels · FastAPI · React/TS · SQLite |
-| **[code-review-ai](https://github.com/MarlenMM/code-review-ai)** | Four experiments on whether an LLM can predict and review pull requests better than a trained model: a 1,494-PR dataset I mined from five large OSS repositories, merge-prediction models, an LLM review pipeline, and a FastAPI backend plus a VS Code extension that wrap the best of both. | Python · scikit-learn · FastAPI · TypeScript |
-| **[modulemate](https://github.com/MarlenMM/modulemate)** | Retrieval-grounded course assistant that answers only from staff-issued material and cites the slide it came from. Hybrid dense + BM25 retrieval, cross-encoder re-ranking, and three independent refusal layers. | Python · FAISS · sentence-transformers · Streamlit |
-| **[theme-worlds](https://github.com/MarlenMM/theme-worlds)** · [live viewer](https://marlenmm.github.io/theme-worlds/) | Seamless 360° panoramas from stock Stable Diffusion v1.5. A MultiDiffusion sampler written from scratch, with circular windows so the wrap-around loop is a property of the sampling rather than a post-process, and multi-branch conditioning so two themes share one world without CLIP's 77-token limit truncating either prompt. No training, zero source images. | Python · PyTorch · diffusers · CLIP |
-| **[rescue-router](https://github.com/MarlenMM/rescue-router)** · [live viewer](https://marlenmm.github.io/rescue-router/) | Flood maps from drone photos and rescue routes to every house: a five-class segmentation learned from 50 labelled photos, and a router that sends a truck on dry ground, a boat across the water and a team on foot for the last stretch, with a confidence tier on every truck route. A pre-registered comparison of a few-shot generalist (Chameleon) with ordinary fine-tuning on the same photos decided which model ships; a 13 MB model maps your own photo in the browser. | Python · PyTorch · torchvision · ONNX Runtime Web · JavaScript · Leaflet |
+**[Rescue Router](https://github.com/MarlenMM/rescue-router)** · [live viewer](https://marlenmm.github.io/rescue-router/)\
+Flood maps from drone photos and truck → boat → on-foot rescue routes to every house, learned from 50 labelled
+photos. A pre-registered comparison found that ordinary fine-tuning beats the course's few-shot generalist from
+about 20 labels: **mIoU .617 vs .507** on all 448 FloodNet test photos, with houses wrongly shown as truck-reachable
+falling from 11.1% to **6.8%**. A 13 MB model maps your own photo in the browser.\
+<sub>PyTorch · torchvision · ONNX Runtime Web · Leaflet · JavaScript — KAIST AIC.20000, Fall 2026</sub>
 
-### Some numbers
+**[QuantPulse](https://github.com/MarlenMM/quantpulse)** · [live demo](https://marlenmm.github.io/quantpulse/)\
+A $0 equity-research and portfolio-construction engine for the S&P 500: eight free data sources, seven-category
+composite scoring, walk-forward backtests with bootstrap confidence intervals, forecasts graded against a random
+walk, and three portfolio optimisers (mean-variance, HRP, Black-Litterman). **21,000+ lines** of engine code and
+**2,000+ tests**, including property-based ones; a scheduled pipeline refreshes the demo every weekday.\
+<sub>Python · pandas · scikit-learn · statsmodels · FastAPI · React/TypeScript · SQLite — personal project, 2026</sub>
 
-- **quantpulse** — Sharpe and CAGR are reported as moving-block bootstrap confidence intervals, never as a bare point estimate. Every forecast (ARIMA/SARIMA, gradient boosting, Monte Carlo) is graded out-of-sample against a random-walk baseline before it is allowed to ship.
-- **code-review-ai** — the best LLM configuration **matched rather than beat** the trained Random Forest: 93.75% accuracy, 0.816 macro-F1, an identical confusion matrix. That was the opposite of my hypothesis, so it became the headline finding.
-- **modulemate** — **zero fabricated citations** and a 1.000 refusal rate on the out-of-scope set across a 63-question gold set, with the false-refusal rate (0.038) published beside it, because a refusal rate on its own can be maximised by refusing everything.
-- **theme-worlds** — a mean **seam ratio of 1.12** over 28 panoramas, where 1.0 means the wrap-around join is indistinguishable from any other pair of columns, against **7.94** for the same seeds with circular windows switched off. The same seeds rendered in two separate Colab sessions produced **byte-identical** PNGs.
-- **rescue-router** — the CPU ensemble that ships reaches **mIoU .617** [.583, .652] on all 448 FloodNet test photos against **.507** for the few-shot model it replaced, and shows a house as truck-reachable when it is not **6.8%** of the time against 11.1%. The few-shot model still wins with 1–5 labelled photos. The questions, runs and decision rules were committed before the first GPU run, so the outcome could not shape the test.
+**[Code Review AI](https://github.com/MarlenMM/code-review-ai)**\
+Can an LLM review pull requests better than a model trained on the project's history? I mined **1,494 PRs** from
+five large open-source repositories, a quarter of them written by an AI agent, and ran four experiments. The best
+LLM configuration **matched, not beat**, a Random Forest (93.75% accuracy, identical confusion matrix), and only the
+self-reflection and multi-turn prompts ever caught a bad AI-written PR. Ships as a FastAPI backend and a VS Code
+extension.\
+<sub>Python · scikit-learn · LLM prompting · FastAPI · TypeScript — HIT Global Summer School, July 2026</sub>
 
+**[Theme Worlds](https://github.com/MarlenMM/theme-worlds)** · [live viewer](https://marlenmm.github.io/theme-worlds/)\
+Seamless 360° panoramas from stock Stable Diffusion v1.5 with a MultiDiffusion sampler written from scratch:
+circular windows make the wrap-around a property of the sampling, and multi-branch conditioning avoids CLIP's
+77-token truncation. Mean **seam ratio 1.12** over 28 panoramas against 7.94 without circular windows, with
+byte-identical reruns.\
+<sub>PyTorch · diffusers · CLIP — KAIST AIC.20000, Fall 2026</sub>
 
-### Research
+**[ModuleMate](https://github.com/MarlenMM/modulemate)**\
+A local AI study workspace for your own notes, slides and scans: answers with inspectable sources, learning cards
+bound to exact source spans, and a planner that turns dates in the material into editable calendar events. Runs a
+quantised 9B model on Apple Silicon with local OCR, and adds its own trained relevance, answerability and ranking
+heads; 480 tests.\
+<sub>Python · MLX · sentence-transformers · SQLite FTS5 · Streamlit — began as a HIT Summer School project, course grade 97/100</sub>
 
-Sole author, peer-reviewed — *"How Did Personal Loans Influence the Well-Being of Financially Unstable Families in Kazakhstan Over the Last Five Years?"*, **Central Asian Scientific Journal**, Vol. 4(23), pp. 12–21 (2024, published in Kazakh). A 101-respondent survey and two semi-structured interviews, designed, fielded and analysed alone.
+### Research and writing
+
+- **Undergraduate researcher**, Interactive Computing Lab, KAIST (Sep 2026 – present): *Agent Access for Research*.
+- **Sole-author journal article**: "How Did Personal Loans Influence the Well-Being of Financially Unstable Families in
+  Kazakhstan Over the Last Five Years?", *Central Asian Scientific Journal* 4(23), pp. 12–21, 2024 (in Kazakh).
+  A 101-respondent survey and two semi-structured interviews, designed, run and analysed alone.
+
+### Education
+
+- **KAIST**, B.S. in AI Computing, 2026 – present
+- **Harbin Institute of Technology**, Global Summer School, July 2026: AI & Machine Learning (97/100), Basics of
+  Machine Learning (91/100), Intelligent Software Engineering practice (90/100)
 
 ### Toolkit
 
-**Languages** — Python, TypeScript, SQL, C\
-**ML and data** — PyTorch, diffusers (Stable Diffusion), scikit-learn, statsmodels, pandas, NumPy, FAISS, sentence-transformers\
-**Systems** — FastAPI, SQLAlchemy, Alembic, React, Streamlit, SQLite\
-**Engineering** — pytest, Hypothesis (property-based testing), GitHub Actions CI, ruff, mypy, pre-commit\
-**Quantitative** — portfolio optimisation (MPT, HRP, Black-Litterman), backtesting, bootstrap confidence intervals, Monte Carlo, ARIMA/SARIMA\
-**Spoken** — English (IELTS 8.0), Russian (native), Kazakh (native)
-
-### Contact
-
-marlen.melis.06@gmail.com\
-marlen.melis@kaist.ac.kr
+**Languages:** Python, TypeScript, JavaScript, SQL, C/C++\
+**ML:** PyTorch, diffusers, scikit-learn, statsmodels, sentence-transformers, FAISS, MLX, ONNX Runtime\
+**Systems:** FastAPI, SQLAlchemy/Alembic, React, Streamlit, Gradio, SQLite, GitHub Actions\
+**Practice:** pytest, Hypothesis, Playwright, ruff, mypy, pre-registration, bootstrap confidence intervals\
+**Spoken:** English (IELTS 8.0), Kazakh and Russian (native)
