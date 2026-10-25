@@ -51,7 +51,7 @@ extension.\
 **[Theme Worlds](https://github.com/MarlenMM/theme-worlds)** · [live viewer](https://marlenmm.github.io/theme-worlds/)\
 Seamless 360° panoramas from stock Stable Diffusion v1.5 with a MultiDiffusion sampler written from scratch:
 circular windows make the wrap-around a property of the sampling, and multi-branch conditioning avoids CLIP's
-77-token truncation. Mean **seam ratio 1.12** over 28 panoramas (1.0 is a seamless join); in paired controls,
+77-token truncation. Mean **seam ratio 1.12** over 28 panoramas (about 1 means the join looks like any other pair of columns); in paired controls,
 switching circular windows off raises it from 1.05 to 7.94. Reruns are byte-identical.\
 <sub>PyTorch · diffusers · CLIP — KAIST AIC.20000, Fall 2026</sub>
 <br clear="right">
