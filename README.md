@@ -6,9 +6,6 @@ Prof. Uichin Lee. I build machine-learning systems end to end, from data collect
 care most about the evaluation: pre-registered comparisons, leakage checks, baselines and confidence intervals,
 with the limits stated next to the numbers.
 
-**Now:** researching how scholarly platforms control access for AI agents (separate `robots.txt` rules for training
-crawlers, search crawlers and user-triggered fetchers) and what that means for AI-assisted literature search.
-
 [LinkedIn](https://www.linkedin.com/in/marlenmelis) · [marlen.melis@kaist.ac.kr](mailto:marlen.melis@kaist.ac.kr) · Daejeon, South Korea
 
 ---
@@ -68,7 +65,7 @@ heads; 480 tests.\
 
 ### Research and writing
 
-- **Undergraduate researcher**, Interactive Computing Lab, KAIST (Sep 2026 – present): *Agent Access for Research*.
+- **Undergraduate researcher**, Interactive Computing Lab, KAIST (Sep 2026 – present)
 - **Sole-author journal article**: "How Did Personal Loans Influence the Well-Being of Financially Unstable Families in
   Kazakhstan Over the Last Five Years?", *Central Asian Scientific Journal* 4(23), pp. 12–21, 2024 (in Kazakh).
   A 101-respondent survey and two semi-structured interviews, designed, run and analysed alone.
