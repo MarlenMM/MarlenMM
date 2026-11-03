@@ -2,9 +2,7 @@
 
 I study **AI Computing at KAIST** (B.S. 2026–2030, with an intended double major in Business & Technology
 Management) and do undergraduate research in the **[Interactive Computing Lab](https://ic.kaist.ac.kr)** with
-Prof. Uichin Lee. I build machine-learning systems end to end, from data collection to a working product, and I
-care most about the evaluation: pre-registered comparisons, leakage checks, baselines and confidence intervals,
-with the limits stated next to the numbers.
+Prof. Uichin Lee. I build machine-learning systems end to end, from data collection to a working product.
 
 [LinkedIn](https://www.linkedin.com/in/marlenmelis) · [marlen.melis@kaist.ac.kr](mailto:marlen.melis@kaist.ac.kr) · Daejeon, South Korea
 
